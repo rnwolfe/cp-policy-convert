@@ -8,6 +8,7 @@ This perl script was created to take an XML export of a Checkpoint firewall (not
 Note: The syntax is available in the script, or just by running ./policy-convert1.0.pl with no options.
 
 From script:
+```
 # Usage:
 #       If the rule -> interface mapping CSV has been generated already, generate the converted config with:
 #               policy-convert.pl <policy xml file> <service xml file> <network xml file> <rule-interface mapping csv> <FW name>
@@ -22,6 +23,7 @@ From script:
 #   destined for a private network.
 #               * The ASA does not support negatively referencing a src/dest object. In order to fix this, you will need to manually
 #                 create the rule referencing the inverse destination.
+```
 
 This was really just created for my specific case and not for general use, but please use it as suits your needs.
 
